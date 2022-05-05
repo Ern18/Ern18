@@ -6,49 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email login</title>
     <style>
-      #body {
-        background-color: #ffffff;
-        width: 350px;
-        height: 560px;
-        margin: 0 auto;
-        padding: 10px;
-        border: solid;
+      /* How it will be displayed on large devices (laptops / desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        #body {
+          background-color: #ffffff;
+          width: 350px;
+          height: 560px;
+          margin: 0 auto;
+          padding: 10px;
+          border: solid;
+        }
+        input[type="text"],
+        input[type="password"] {
+          position: relative;
+          bottom: 15px;
+          height: 35px;
+          width: 100%;
+          background-color: #ddd;
+          display: inline-block;
+          border: none;
+        }
+        a {
+          color: blue;
+        }
+        #register {
+          background-color: rgb(120, 185, 120);
+          width: 70%;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          top: 12px;
+          left: 30px;
+          display: inline-block;
+          cursor: pointer;
+        }
+        #signIn {
+          background-color: rgb(222, 224, 223);
+          text-align: center;
+          width: 102.5%;
+          height: 40px;
+          padding: 4px;
+          position: relative;
+          right: 8px;
+          top: 11px;
+        }
       }
-
-      input[type="text"],
-      input[type="password"] {
-        position: relative;
-        bottom: 15px;
-        height: 35px;
-        width: 100%;
-        background-color: #ddd;
-        display: inline-block;
-        border: none;
+      /* How it will be displayed on small devices (portraits tablets and large phones, 600px and up) (Types of phones: iPhone 6/7/8/ plus, iPhone 12 pro, iPhone SE, iPhone XR, iphone X) */
+      @media only screen and (max-width: 600px) {
+        #body {
+          background-color: #ffffff;
+          width: 335px;
+          height: 580px;
+          padding: 10px;
+          border: solid;
+        }
+        input[type="text"],
+        input[type="password"] {
+          position: relative;
+          bottom: 15px;
+          height: 35px;
+          width: 85%;
+          background-color: #ddd;
+          display: inline-block;
+          border: none;
+        }
+        a {
+          color: blue;
+        }
+        #register {
+          background-color: rgb(120, 185, 120);
+          width: 70%;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          top: 8px;
+          left: 30px;
+          display: inline-block;
+          cursor: pointer;
+        }
+        #signIn {
+          background-color: rgb(222, 224, 223);
+          text-align: center;
+          width: 100%;
+          height: 40px;
+          padding: 4px;
+          position: relative;
+          right: 8px;
+          top: 3px;
+        }
       }
-      a {
-        color: blue;
-      }
-      #register {
-        background-color: rgb(120, 185, 120);
-        width: 70%;
-        padding: 10px;
-        text-align: center;
-        position: relative;
-        top: 12px;
-        left: 30px;
-        display: inline-block;
-        cursor: pointer;
-      }
-      #signIn {
-        background-color: rgb(222, 224, 223);
-        text-align: center;
-        width: 102.5%;
-        height: 40px;
-        padding: 4px;
-        position: relative;
-        position: relative;
-        right: 8px;
-        top: 11px;
+      /* How it will be displayed on medium devices (landscpae tablets, 768px and up) (Types of phones: iPad, iPad mini, surface duo) */
+      @media only screen and (min-width: 768px) {
+        #body {
+          background-color: #ffffff;
+          width: 430px;
+          height: 620px;
+          margin: 0 auto;
+          padding: 10px;
+          border: solid;
+        }
+        input[type="text"],
+        input[type="password"] {
+          position: relative;
+          bottom: 15px;
+          height: 35px;
+          width: 100%;
+          background-color: #ddd;
+          display: inline-block;
+          border: none;
+        }
+        a {
+          color: blue;
+        }
+        #register {
+          background-color: rgb(120, 185, 120);
+          width: 80%;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          top: 80px;
+          left: 30px;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 20px;
+        }
+        #signIn {
+          background-color: rgb(222, 224, 223);
+          text-align: center;
+          width: 102.5%;
+          height: 40px;
+          padding: 4px;
+          position: relative;
+          right: 8px;
+          top: 80px;
+        }
       }
     </style>
   </head>
@@ -58,25 +149,25 @@
       <p>Please fill in this form to create an account</p>
       <hr />
       <h3>Email</h3>
-      <input type="text" placeholder="Enter email" />
+      <input type="text" placeholder="Enter email" required />
       <h3>Password</h3>
-      <input type="password" placeholder="Enter Password" />
+      <input type="password" placeholder="Enter Password" required />
       <h3>Repeat Password</h3>
-      <input type="password" placeholder="Repeat Password" />
+      <input type="password" placeholder="Repeat Password" required />
       <div>
         By creating an account you agree to our
-        <a href="Learning Process.html">Terms & Privacy</a>
+        <a href="My to do list.html">Terms & Privacy</a>
       </div>
       <p id="register" onclick="register(this)">Register</p>
       <div id="signIn">
-        <p>Already have an account? <a href="BIT.html">Sign in</a></p>
+        <p>Already have an account? <a href="All tutorials.html">Sign in</a></p>
       </div>
     </div>
 
     <script>
       function register() {
-        alert("Hi there");
+        alert("Will be working on this later");
       }
     </script>
   </body>
-     </html>
+</html>
